@@ -1,0 +1,144 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+  code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.user ,.cart{
+  color: white;
+  display: flex;
+  gap: 5px;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+}
+.user img,.cart img {
+  width:25px;
+}
+.logo{
+  width: 110px;
+}
+.input{
+  border: none;
+  width: 670px;
+  height:40px;
+  border-radius:10px;
+  }
+.input:focus{
+  outline: none;
+}
+.menubar {
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(235, 235, 241); 
+
+}
+.menubar div{
+   width:max-content;
+   color: black;
+   line-height: 1.15;
+   font-weight: 600;
+}
+.menubar ul {
+  display: inline-flex;
+  list-style: none;
+  
+}
+.menubar ul li {
+  direction: ltr;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.menubar>ul>li>div a {
+  height:25px ;
+  margin-left: 0px;
+  margin-top:6px ;
+  text-decoration: none;
+}
+
+.deepmenu1 div:hover ,
+.deepmenu2 div:hover,
+.deepmenu3 div:hover ,
+.deepmenu4  div:hover,
+.deepmenu5  div:hover,
+.deepmenu6  div:hover,
+.deepmenu7  div:hover,
+.deepmenu8  div:hover,
+.deepmenu9  div:hover
+{
+cursor: pointer;
+  background-color:white;
+  box-sizing: border-box;
+  color: rgb(42, 145, 230);
+}
+
+.deepmenu1,.deepmenu2,.deepmenu3,.deepmenu4,.deepmenu5,.deepmenu6,.deepmenu7,.deepmenu8,.deepmenu9{
+      display: none;
+    
+    
+}
+
+.active1:hover .deepmenu1,.active2:hover .deepmenu2,.active3:hover .deepmenu3,.active4:hover .deepmenu4 ,.active5:hover .deepmenu5,.active6:hover .deepmenu6,.active7:hover .deepmenu7,.active8:hover .deepmenu8,.active9:hover .deepmenu9{
+  display: block;
+  position:absolute;
+  text-align: left;
+  margin-top: 9px;
+  font-size: 16px;
+  font-weight: 100;
+  background-color:rgb(235, 235, 241); 
+ 
+}
+
+.subdivision1{
+  display: inline-flex;
+  direction: ltr;
+  list-style: none;
+  background-color: red;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.subdivision1 ul li{
+  display: inline-block;
+}
+ .deepmenu2:hover >ul>div:hover> div{
+  width:100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+.menu div{
+ 
+  width:210px;
+}
+.vertical_line{
+  display: none;
+}
+.vertical_line{
+  display: block;
+  left: 50%;
+  margin-top: -240px;
+  border: 1px dotted rgba(128, 128, 128, 0.397);
+  height: 240px;
+
+  position: absolute;
+}
